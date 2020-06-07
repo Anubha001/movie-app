@@ -1,28 +1,5 @@
-/* body {
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-}
 
-label {
-  display: block;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-button {
-  margin-top: 10px;
-}
-
-#directory-table {
-  margin-top: 15px;
-}
-
-#directory-table td,
-#directory-table th {
-  padding-right: 20px;
-  text-align: left;
-} */body {
+body {
   font-family: 'open sans', sans-serif;
   font-size: 16px;
  }
@@ -38,9 +15,6 @@ thead button.descending::after {
   display: inline-block;
   margin-left: 1em;
 }
-
-
-
 .tablecontainer{
 width:60%;
 padding:30px

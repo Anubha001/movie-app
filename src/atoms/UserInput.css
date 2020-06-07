@@ -1,6 +1,6 @@
 .searchbox{
-    width:50%;
-    background-color:wheat;
+    width:25%;
+    background-color:rgb(156, 233, 153);
     color:black;
     font-size: 100%;
     padding: 10px;
@@ -9,5 +9,6 @@
     border-radius: 5px;
     text-decoration: none;
     position: relative;
-    bottom: 10px;
+    padding-left:10px;
+    margin-left: 25px;
  }

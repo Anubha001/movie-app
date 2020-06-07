@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
-import Form from './Form'
-import Table from './Table'
+import Form from './Components/Form'
+import Table from './Components/Table'
 import UserInput from './atoms/UserInput'
 import './App.css'
 
@@ -20,8 +20,8 @@ export default class App extends Component {
     users: [ {
       id: 0,
       username: "david",
-      ratings: "guerrero",
-      duration: "david_xc3@hotmail.com",
+      ratings: "3",
+      duration: "2",
       updating: false
    }]
  };
@@ -47,7 +47,6 @@ updateUser = key => {
 };
 handleChange = (event) => {
   let searchValue = event.target.value;
-  console.log(searchValue,'searchValue')
   this.setState({ search: searchValue });
 }
  onChange = event => {
@@ -118,10 +117,8 @@ onSubmit = event => {
      });
 
   } else if (formState.mode === "edit") {
-    console.log(users,'aseem')
 
     const index = users.find((user)=> user.id === formState.id).id;
-    console.log(index,'index')
 
 
      users[index] = {
@@ -151,14 +148,13 @@ updateUser = key => {
     const { formState } = this.state;
     let users = this.state.users,
   searchString = this.state.search.trim().toLowerCase();
-    // console.log(searchString)
 
 if (users && searchString.length > 1) {
   users = users.filter((e) => e.username.toLowerCase().match(searchString));
 }
 
     return (
-      <div>
+      <div align='center'>
         <div className = "movieform" align="center">
         <Form
             formState={formState}
